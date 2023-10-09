@@ -326,7 +326,7 @@ h6 {
 }
 
 .navcontainer{
-  max-width: 1700px;
+  max-width: 90%;
 }
 
 .navbar li {
@@ -342,7 +342,7 @@ h6 {
   color: black;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -2385,7 +2385,7 @@ figure.effect-layla figcaption::after {
 }
 
 figure.effect-layla h2 {
-	padding-top: 15%;
+	/* padding-top: 15%; */
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
@@ -2446,7 +2446,7 @@ figure.effect-layla:hover p {
 }
 
 figure.effect-layla:hover p{
-  margin-top: 20px;
+  /* margin-top: 2%; */
 }
 
 figure.effect-layla:hover figcaption::after,
