@@ -52,7 +52,7 @@ const ProductCategory = () => {
     return (
         <div className='Categories' id="productcategory">
         <h1 className='text-center mt-[30px]'>Product Category</h1>
-        <div className='border'>
+        <div className=''>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {products.map((item, index) => (
               <div>
