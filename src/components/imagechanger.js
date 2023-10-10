@@ -1,14 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import butturimage from "../../src/images/butter-removebg-preview.png"
-// import coneshapejaggery from "../../src/images/cone-shape-jaggery.png"
-import fenugreek from "../../src/images/fenugreek-removebg-preview.png";
-import ginneroil from "../../src/images/ginger_oil-removebg-preview.png";
-// import greenpeers from "../../src/images/green peas.png";
-import jaggery from "../../src/images/jaggery-removebg-preview.png";
-import milkpowder from "../../src/images/milk-powder.png";
-import peardcord from "../../src/images/peas_corn-removebg-preview.png";
-import ragi from "../../src/images/ragi.png";
-import farmerfresh from "../../src/images/farmer fresh.png";
+
+import greencord from "../../src/slideshowimages/green & corn.png"
+import banana from "../../src/slideshowimages/banu-transformed.png"
+import cashew12 from "../../src/slideshowimages/cashew12.jpg"
+import fingerMilet from "../../src/slideshowimages/Finger Millet Ragi 9.png"
+import manuke from "../../src/slideshowimages/istockphoto-171306112-1024x1024-transformed.jpg"
+import jackfroit from "../../src/slideshowimages/jack Fruit 5.png"
+import organicjeerry from "../../src/slideshowimages/Organic_Jaggery_3-removebg-preview.png"
+import sweetpotato from "../../src/slideshowimages/Sweet Potato 10.png"
+import shad from "../../src/slideshowimages/WhatsApp Image 2023-10-09 at 10.46.55 PM.jpeg"
+import istock4649 from "../../src/slideshowimages/istockphoto-464971800-1024x1024-transformed-removebg-preview.png"
+import temric from "../../src/slideshowimages/istockphoto-1137344824-1024x1024-transformed.png"
+import farmerfresh from "../../src/images/farmer fresh.png"
+
+
+
+
+
 
 
 
@@ -20,15 +28,17 @@ import farmerfresh from "../../src/images/farmer fresh.png";
 
 const ImageChanger = () => {
     const [images, setImages] = useState([
-      butturimage,
-      // coneshapejaggery ,
-      fenugreek,
-      ginneroil,
-      jaggery,
-      // greenpeers,
-      milkpowder,
-      peardcord,
-      ragi
+      greencord,
+      banana ,
+      cashew12,
+      fingerMilet,
+      manuke,
+      jackfroit,
+      organicjeerry,
+      sweetpotato,
+      shad,
+      istock4649,
+      temric
       ]);
       const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

@@ -1,9 +1,10 @@
 import React from 'react'
+import video from "../../src/videos/WhatsAppVideo2023-10-10at10.30.24 AM.mp4"
 
 const WhatWeDo = () => {
   return (
     <div>
-    <section id="about" className=" ">
+    <section id="about" className="video-background about">
       {/* <div class="container" data-aos="fade-up">
     <div>
         hello
@@ -29,7 +30,12 @@ const WhatWeDo = () => {
         </div>
 
       </div> */}
-      <div className='max-w-[1200px] m-auto'>
+      <video autoPlay muted loop>
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="video-gradient-overlay"></div>
+      <div className='aboutcontent max-w-[1200px] m-auto'>
      <div className=''>
       <h1 className='text-center text-[#000] font-extrabold mb-[2%]'>What we Do</h1>
       <div className=' w-[70%] m-auto  xl:mt-8 '>
