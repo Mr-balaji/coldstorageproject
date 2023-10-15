@@ -21,13 +21,20 @@ import ProductCategory from './components/productcategory';
 import WhytoChoosUs from './components/whytochoosus';
 import Footer from './components/fotter';
 
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
 
 function App() {
 
   return (
    <>
    <MyComponent />
-   <Dashboard />
+   <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Dashboard />} />
+    </Routes>
+   </BrowserRouter>
+
    </>
   );
 }

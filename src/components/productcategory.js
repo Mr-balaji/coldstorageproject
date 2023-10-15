@@ -50,42 +50,42 @@ const ProductCategory = () => {
 
     ]
     return (
-      //   <div className='Categories' id="productcategory">
-      //   <h1 className='text-center mt-[30px]'>Product Category</h1>
-      //   <div className=''>
-      //     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4">
-      //       {products.map((item, index) => (
-      //         <div>
-      //           <figure className="effect-layla">
-      //             <img className='max-w-sm' src={item.img} alt="img06"/>
-      //             <figcaption>
-      //               <h2>Crazy <span>{item.title}</span></h2>
-      //               <p>{item.description}</p>
-      //               <a href="#" className='bg-[red]'>View more</a>
-      //               <p ><a href='#' className=' text-[#fff]  bg-[green] no-underline px-3 py-3 rounded-full decoration-none'>View More</a></p>
-      //             </figcaption>
-      //           </figure>
-      //           </div>
-      //       ))}
-      //     </div>
-      //   </div>
-      // </div>
-      <>
-      <h1 className='text-center mt-[50px]'>Product Category</h1>
+        <div className='Categories' id="productcategory">
+        <h1 className='text-center mt-[-15%]'>Product Category</h1>
+        <div className=''>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            {products.map((item, index) => (
+              <div>
+                <figure className="effect-layla">
+                  <img className='max-w-sm' src={item.img} alt="img06"/>
+                  <figcaption>
+                    <h2>Crazy <span>{item.title}</span></h2>
+                    <p>{item.description}</p>
+                    <a href="#" className='bg-[red]'>View more</a>
+                    <p ><a href='#' className=' text-[#fff]  bg-[green] no-underline px-3 py-3 rounded-full decoration-none'>View More</a></p>
+                  </figcaption>
+                </figure>
+                </div>
+            ))}
+          </div>
+        </div>
+      </div>
+//       <>
+//       <h1 className='text-center'>Product Category</h1>
 
-      <div class="gallery xl:pt-[10%] xl:pb-[10%]">
-      {
-        products.map((elm)=>{
-          return(
-            <>
-         <img className='max-w-sm' src={elm.img} alt="img06"/>
-            </>
-          )
-        })
-      }
+//       <div class="gallery xl:pt-[10%] xl:pb-[10%]">
+//       {
+//         products.map((elm)=>{
+//           return(
+//             <>
+//          <img className='max-w-sm' src={elm.img} alt="img06"/>
+//             </>
+//           )
+//         })
+//       }
 
-</div>
-</>
+// </div>
+// </>
 
     )
 }
