@@ -11,7 +11,7 @@ import sweetpotato from "../../src/slideshowimages/Sweet Potato 10.png"
 import shad from "../../src/slideshowimages/WhatsApp Image 2023-10-09 at 10.46.55 PM.jpeg"
 import istock4649 from "../../src/slideshowimages/istockphoto-464971800-1024x1024-transformed-removebg-preview.png"
 import temric from "../../src/slideshowimages/istockphoto-1137344824-1024x1024-transformed.png"
-import farmerfresh from "../../src/images/farmer fresh.png"
+import farmerfresh from "../../src/images/New Project.png"
 
 
 
