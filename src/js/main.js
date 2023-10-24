@@ -7,6 +7,7 @@ import Swiper from 'swiper/bundle';
 import GLightbox from 'glightbox';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // If AOS has associated CSS
+import "../js/slideshow"
 
 function MyComponent() {
   useEffect(() => {

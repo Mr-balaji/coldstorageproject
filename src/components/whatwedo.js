@@ -34,8 +34,8 @@ const WhatWeDo = () => {
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="video-gradient-overlay"></div>
-      <div className='aboutcontent max-w-[1200px] m-auto'>
+      <div className="video-gradient-overlay "></div>
+      <div className='aboutcontent  max-w-[1200px] m-auto'>
      <div className=''>
       <h1 className='text-center text-[#000] font-extrabold mb-[2%]'>What we Do</h1>
       <div className=' w-[70%] m-auto  xl:mt-8 '>
@@ -46,7 +46,7 @@ We have a team of agronomists, Food Technologist and International Marketing pro
 </p>
 <p className='text-[#000] text-[20px]'>We are progressive as we contribute to India's economy by exporting quality products.</p>
       <div className='flex justify-center items-center'>
-      <button className='px-3 text-[25px]   py-2 text-[#fff] bg-[green] rounded-full'>One Click Away</button>
+      <a href='/about'  className='px-3 text-[25px]   py-2 text-[#fff] bg-[green] rounded-full'>One Click Away</a>
       </div>
       </div>
      </div>

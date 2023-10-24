@@ -7,6 +7,7 @@ import OurServices from '../components/ourservices';
 import ProductCategory from '../components/productcategory';
 import WhytoChoosUs from '../components/whytochoosus';
 import Footer from '../components/fotter';
+import Slideshow from './slideshow';
 
 const Dashboard = () => {
   return (
@@ -14,7 +15,7 @@ const Dashboard = () => {
     <Navbar />
     <ImageChanger />
     <WhatWeDo />
-    <OurServices />
+    <Slideshow />
    <ProductCategory />
    <WhytoChoosUs />
    <Footer />

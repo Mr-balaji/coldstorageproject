@@ -50,8 +50,8 @@ const ProductCategory = () => {
 
     ]
     return (
-        <div className='Categories' id="productcategory">
-        <h1 className='text-center mt-[-15%]'>Product Category</h1>
+        <div className='Categories mt[14%]' id="">
+        <h1 className='text-center '>Product Category</h1>
         <div className=''>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {products.map((item, index) => (

@@ -22,6 +22,8 @@ import WhytoChoosUs from './components/whytochoosus';
 import Footer from './components/fotter';
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import About from './pages/about';
+import Slideshow from './pages/slideshow';
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
    <BrowserRouter>
     <Routes>
       <Route path='/' element={<Dashboard />} />
+      <Route path='/about' element={<Slideshow />} />
+
     </Routes>
    </BrowserRouter>
 
