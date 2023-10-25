@@ -195,46 +195,92 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
           {
             secondSliderData.map((elm)=>{
               return(
-                <div class="container">
-                <div class="card">
-                  <div class="box">
-                    <div class="content">
-                      <h2>01</h2>
-                      <h3>Card One</h3>
-                      <p>We Provide Specialized facilities to designed to preserve and store perishable items and temperature-sensitive goods at controlled low temperatures. 
-Cold Storage is Equipped with refrigeration systems to maintain a consistent cold environment, preventing spoilage, and extending the shelf life of products like fruits,
- vegetables, dairy, meat, and pharmaceuticals.
- Cold storage plays a crucial role in the food supply chain, helping to reduce food waste, ensure product quality, and support the distribution of goods to consumers 
-throughout the year. We provide 4000 Nos of palletize System for  Frozen & Chiller Room & 400 Sq.mtr  Rack System to store Food Products.
-Frozen room temperature range between -18°C to -24°C.
-Chiller room temperature range between 0°C to 12°C</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                </div>
+//             {/* <div class="container">
+// //                 <div class="card">
+// //                   <div class="box">
+// //                     <div class="content">
+// //                       <h2>01</h2>
+// //                       <h3>Card One</h3>
+// //                       <p>We Provide Specialized facilities to designed to preserve and store perishable items and temperature-sensitive goods at controlled low temperatures. 
+// // Cold Storage is Equipped with refrigeration systems to maintain a consistent cold environment, preventing spoilage, and extending the shelf life of products like fruits,
+// //  vegetables, dairy, meat, and pharmaceuticals.
+// //  Cold storage plays a crucial role in the food supply chain, helping to reduce food waste, ensure product quality, and support the distribution of goods to consumers 
+// // throughout the year. We provide 4000 Nos of palletize System for  Frozen & Chiller Room & 400 Sq.mtr  Rack System to store Food Products.
+// // Frozen room temperature range between -18°C to -24°C.
+// // Chiller room temperature range between 0°C to 12°C</p>
+// //                       <a href="#">Read More</a>
+// //                     </div>
+// //                   </div>
+// //                 </div>
               
-                <div class="card">
-                  <div class="box">
-                    <div class="content">
-                      <h2>02</h2>
-                      <h3>Card Two</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                </div>
+// //                 <div class="card">
+// //                   <div class="box">
+// //                     <div class="content">
+// //                       <h2>02</h2>
+// //                       <h3>Card Two</h3>
+// //                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+// //                       <a href="#">Read More</a>
+// //                     </div>
+// //                   </div>
+// //                 </div>
               
-                <div class="card">
-                  <div class="box">
-                    <div class="content">
-                      <h2>03</h2>
-                      <h3>Card Three</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
-                      <a href="#">Read More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+// //                 <div class="card">
+// //                   <div class="box">
+// //                     <div class="content">
+// //                       <h2>03</h2>
+// //                       <h3>Card Three</h3>
+// //                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+// //                       <a href="#">Read More</a>
+// //                     </div>
+// //                   </div>
+// //                 </div>
+//          </div> */}
+         <>
+  <div class="container">
+  <div class="card">
+      <div class="face face1">
+          <div class="content">
+              <img src={coldstorageicon} />
+              <h3>Cold Storage</h3>
+          </div>
+      </div>
+      <div class="face face2">
+          <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                  <a href="#">Read More</a>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="face face1">
+          <div class="content">
+              <img src={warehouseicon}/>
+              <h3>Ware House</h3>
+          </div>
+      </div>
+      <div class="face face2">
+          <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                  <a href="#">Read More</a>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="face face1">
+          <div class="content">
+          <img src={warehouseicon}/>
+              <h3>Ware House</h3>
+          </div>
+      </div>
+      <div class="face face2">
+          <div class="content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                  <a href="#">Read More</a>
+          </div>
+      </div>
+  </div>
+</div>
+</>
               )
             })
           }
