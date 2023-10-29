@@ -10,8 +10,8 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import '../slideshow.css'
 import foodcluster from '../images/food cluster icon.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import coldstorageicon from "../images/cold storage icon.jpg"
-import warehouseicon from "../images/warehouse icon.jpg"
+import coldstorageicon from "../images/cold_storage_icon-removebg-preview.png"
+import warehouseicon from "../images/warehouse_icon-removebg-preview.png"
 
 
 // Import Swiper styles
@@ -108,11 +108,11 @@ const Slideshow = () => {
   };
 
   const secondSliderData = [
-    {id:1,title:"",content:"",img:""},
-    {id:2,title:"",content:"",img:""},
-    {id:3,title:"",content:"",img:""},
-    {id:4,title:"",content:"",img:""},
-    {id:5,title:"",content:"",img:""},
+    {id:1,title:"",content:"",img:foodcluster},
+    {id:2,title:"",content:"",img:warehouseicon},
+    {id:3,title:"",content:"",img:coldstorageicon},
+    // {id:4,title:"",content:"",img:""},
+    // {id:5,title:"",content:"",img:""},
   ]
 
   useEffect(() => {
@@ -146,6 +146,27 @@ const progressCircle = useRef(null);
     progressCircle.current.style.setProperty('--progress', 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [
+    foodcluster,
+    'image2.jpg',
+    'image3.jpg',
+    // Add more image URLs as needed
+  ];
+  
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      // Update the current image index to create the auto slide effect
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Change the duration as needed (in milliseconds)
+
+    return () => {
+      // Clear the interval when the component unmounts
+      clearInterval(intervalId);
+    };
+  }, []);
 
 
 
@@ -192,6 +213,7 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
         </SwiperSlide>
         <SwiperSlide>
           <>
+          <div className='flex justify-between w-[1200px] m-auto'>
           {
             secondSliderData.map((elm)=>{
               return(
@@ -236,7 +258,40 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
 // //                 </div>
 //          </div> */}
          <>
-  <div class="container">
+       
+       {/* <div className="slider-container">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`slider-image ${
+            index === currentImageIndex ? 'active' : ''
+          }`}
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      )
+      )}
+    </div> */}  
+ 
+
+  {/* <div className='w-[100%] flex'> */}
+<div class="a-box">
+  <div class="img-container">
+    <div class="img-inner">
+      <div class="inner-skew">
+        <img src={elm.img} />
+      </div>
+    </div>
+  </div>
+  <div class="text-container">
+    <h3>A blue bird</h3>
+    <div>
+      This a demo experiment to skew image container. It looks good.
+  </div>
+</div>
+</div>
+{/* </div> */}
+         
+  {/* <div class="container">
   <div class="card">
       <div class="face face1">
           <div class="content">
@@ -279,11 +334,12 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
           </div>
       </div>
   </div>
-</div>
+</div> */}
 </>
               )
             })
           }
+          </div>
          
           </>
         </SwiperSlide>

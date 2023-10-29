@@ -439,3 +439,212 @@
   background: #333;
   color: #fff;
 }
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  height: 300px; /* Adjust the height as needed */
+}
+
+.slider-image {
+  flex: 0 0 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slider-image.active {
+  opacity: 1;
+}
+
+
+
+/* section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#DA22FF, #9733EE);
+	clip-path: circle(30% at right 70%);
+} */
+
+section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#E55D87, #5FC3E4);
+	clip-path: circle(20% at 10% 10%);
+}
+
+.slidecontainer {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+
+.slidecontainer .card {
+	position: relative;
+	width: 27%;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 20px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.slidecontainer .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.slidecontainer .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.slidecontainer .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+  margin-top: -95px;
+	overflow: hidden;
+}
+
+.slidecontainer .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.slidecontainer .card .content .contentBx h3 {
+	color: red;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.slidecontainer .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.slidecontainer .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+/* .slidecontainer .card .sci  {
+	list-style: none;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+  margin-top: -50px;
+} */
+
+/* .slidecontainer .card:hover .sci  {
+	transform: translateY(0px);
+	opacity: 1;
+} */
+
+/* .slidecontainer .card .sci li a {
+	color: red;
+	font-size: 20px;
+} */
+
+
+
+.a-box {
+  display: inline-block;
+  width: 25%;
+  /* border: 2px solid red; */
+  text-align: center;
+  /* margin-left: 20px; */
+
+}
+
+.img-container {
+    /* height: 230px; */
+    /* width: 200px; */
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.img-container img {
+    transform: skew(0deg, -13deg);
+    height: 214px;
+    transition: transform 0.3s, z-index 0s;
+    /* margin: -35px 0px 0px -70px; */
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 15deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #c8c2c2;
+    height: 250px;
+    width: 235px;
+    transition: 0.5s ease-in-out;
+}
+.inner-skew:hover{
+  transform: skew(0deg, 0deg);
+
+}
+.inner-skew:hover img{
+  transform: skew(0deg, 0deg);
+  transform: translateY(-5px); /* Adjust the pixel value to move it slightly up */
+  z-index: 1; 
+  /* transform: skew(0deg, 0deg); Adjust the skew values as needed */
+  /* height: 214px; Set the desired height */
+}
+.inner-skew .img{
+  background-color: #c8c2c2;
+}
+
+.text-container {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.text-container h3 {
+  margin: 20px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
+}
