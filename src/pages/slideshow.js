@@ -12,6 +12,8 @@ import foodcluster from '../images/food cluster icon.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import coldstorageicon from "../images/cold_storage_icon-removebg-preview.png"
 import warehouseicon from "../images/warehouse_icon-removebg-preview.png"
+import coldstoragebg from "../images/cold storage Background.jpg";
+import wareHousebg from "../images/warehouse background.jpeg";
 
 
 // Import Swiper styles
@@ -178,15 +180,15 @@ const progressCircle = useRef(null);
     <h1 className='text-center mt-[50px]'>Our Services</h1>
 <Swiper
         // centeredSlides={true}
-        // autoplay={{
-        //   delay: 10000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 150000,  
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
         navigation={true}
-        // modules={[Autoplay]}
+        modules={[Autoplay,Pagination]}
         // onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
@@ -213,7 +215,77 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
         </SwiperSlide>
         <SwiperSlide>
           <>
-          <div className='flex justify-between w-[1200px] m-auto'>
+          <div>
+
+        
+          <div className='flex justify-between  m-auto relative'>
+          <Swiper
+        autoplay={{
+          delay: 2500,  
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay,Pagination]}
+        className="mainswipe"
+      >
+        <SwiperSlide><div ><img className='h-[100vh] bg-cover' src={coldstoragebg} /></div></SwiperSlide>
+        <SwiperSlide><div ><img className='h-[100vh] bg-cover' src={wareHousebg} /></div></SwiperSlide>
+        <SwiperSlide><div><img className='h-[100vh] bg-cover' src={wareHousebg} /></div></SwiperSlide>
+        
+      </Swiper>
+      <div className='absolute z-[999] w-[100%] m-auto   flex justify-between xl:w-[10 0%]'>
+          <div class="a-box ">
+  <div class="img-container">
+    <div class="img-inner">
+      <div class="inner-skew">
+        <img src={coldstorageicon} />
+      </div>
+    </div>
+  </div>
+  <div class="text-container">
+    <h3>A blue bird</h3>
+    <div>
+      This a demo experiment to skew image container. It looks good.
+  </div>
+</div>
+</div>
+
+<div class="a-box ">
+  <div class="img-container">
+    <div class="img-inner">
+      <div class="inner-skew md:h-[10px] sm:h-[10px]">
+        <img src={warehouseicon} />
+      </div>
+    </div>
+  </div>
+  <div class="text-container">
+    <h3>A blue bird</h3>
+    <div>
+      This a demo experiment to skew image container. It looks good.
+  </div>
+</div>
+</div>
+
+<div class="a-box">
+  <div class="img-container">
+    <div class="img-inner">
+      <div class="inner-skew">
+        <img src={warehouseicon} />
+      </div>
+    </div>
+  </div>
+  <div class="text-container">
+    <h3>A blue bird</h3>
+    <div>
+      This a demo experiment to skew image container. It looks good.
+  </div>
+</div>
+</div>
+</div>
+
           {
             secondSliderData.map((elm)=>{
               return(
@@ -272,23 +344,9 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
       )}
     </div> */}  
  
-
+  
   {/* <div className='w-[100%] flex'> */}
-<div class="a-box">
-  <div class="img-container">
-    <div class="img-inner">
-      <div class="inner-skew">
-        <img src={elm.img} />
-      </div>
-    </div>
-  </div>
-  <div class="text-container">
-    <h3>A blue bird</h3>
-    <div>
-      This a demo experiment to skew image container. It looks good.
-  </div>
-</div>
-</div>
+
 {/* </div> */}
          
   {/* <div class="container">
@@ -339,6 +397,8 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
               )
             })
           }
+          </div>
+
           </div>
          
           </>

@@ -19,7 +19,7 @@
     object-fit: cover;
   }
 
-  /* .autoplay-progress svg {
+   .autoplay-progress svg {
     --progress: 0;
     position: absolute;
     left: 0;
@@ -33,9 +33,9 @@
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
-  } */
+  } 
 
-  /* .autoplay-progress {
+   .autoplay-progress {
     position: absolute;
     right: 16px;
     bottom: 16px;
@@ -47,7 +47,7 @@
     justify-content: center;
     font-weight: bold;
     color: var(--swiper-theme-color);
-  } */
+  } 
 
   .div-with-background {
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('./images/food\ cluster\ background.jpg');
@@ -628,10 +628,21 @@ section::after {
   z-index: 1; 
   /* transform: skew(0deg, 0deg); Adjust the skew values as needed */
   /* height: 214px; Set the desired height */
+  /* padding: 50px; */
+  /* height: 100%;
+  margin-top: -10%;
+  box-shadow: inset;
+  box-sizing: border-box; */
+  -webkit-transform: scale(1.4);
+-ms-transform: scale(1.4);
+transform: scale(1.4);
+transition: 1s ease;
+  /* width: 50px; */
 }
 .inner-skew .img{
   background-color: #c8c2c2;
 }
+
 
 .text-container {
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
@@ -647,4 +658,8 @@ section::after {
   margin: 20px 0px 10px 0px;
   color: #04bcff;
   font-size: 18px;
+}
+
+.mainswipe{
+  /* border: 2px solid red; */
 }
