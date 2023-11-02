@@ -26,6 +26,11 @@ import {Keyboard, Pagination, Navigation,Autoplay } from 'swiper/modules';
 
 const Slideshow = () => {
   const [products, setProducts] = useState([]);
+  const [moreDetails, setMoreDetails] = useState(false);
+  const [moreDetailswateHouse, setMoreDetailsWareHouse] = useState(false);
+  const [moreDetailsriping, setMoreDetailsriping] = useState(false);
+
+
 
 
   const sampleData = [
@@ -221,7 +226,7 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
           <div className='flex justify-between  m-auto relative'>
           <Swiper
         autoplay={{
-          delay: 2500,  
+          delay:10000,  
           disableOnInteraction: false,
         }}
         pagination={{
@@ -231,12 +236,37 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
         modules={[Autoplay,Pagination]}
         className="mainswipe"
       >
-        <SwiperSlide><div ><img className='h-[100vh] bg-cover' src={coldstoragebg} /></div></SwiperSlide>
-        <SwiperSlide><div ><img className='h-[100vh] bg-cover' src={wareHousebg} /></div></SwiperSlide>
-        <SwiperSlide><div><img className='h-[100vh] bg-cover' src={wareHousebg} /></div></SwiperSlide>
+        <SwiperSlide>
+           {/* <div className='div-with-background imgdiv'><img className='h-[100vh] imgdiv' src={coldstoragebg} /></div> */}
+           <div className=' div-with-background1  h-[100%] '>
+          <div className='xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   '>
+           <div className='contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto'>
+
+           </div>
+          </div>
+
+          </div>
+           </SwiperSlide>
+        <SwiperSlide>
+        <div className=' div-with-background2  h-[100%] '>
+          <div className='xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   '>
+           <div className='contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto'>
+
+           </div>
+          </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide> <div className=' div-with-background3  h-[100%] '>
+          <div className='xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   '>
+           <div className='contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto'>
+
+           </div>
+          </div>
+          </div>
+          </SwiperSlide>
         
       </Swiper>
-      <div className='absolute z-[999] w-[100%] m-auto   flex justify-between xl:w-[10 0%]'>
+      {/* <div className='absolute z-[999] w-[100%] m-auto   flex justify-between xl:w-[10 0%]'>
           <div class="a-box ">
   <div class="img-container">
     <div class="img-inner">
@@ -284,7 +314,214 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
   </div>
 </div>
 </div>
+</div> */}
+<div className='absolute z-[999] xl:w-[100%] m-auto   flex justify-between xl:w-[10 0%] border border-[red] items-center h-[70vh]'>
+<section class="articles">
+  <article>
+    <div class="article-wrapper">
+      {
+        moreDetails ?
+        <div class="article-body">
+        <h2>coldStorage</h2>
+        <p>
+        We Provide Specialized facilities to designed to preserve and store perishable items and temperature-sensitive goods at controlled low temperatures. 
+Cold Storage is Equipped with refrigeration systems to maintain a consistent cold environment, preventing spoilage, and extending the shelf life of products like fruits,
+ vegetables, dairy, meat, and pharmaceuticals.
+  We provide 4000 Nos of palletize System for  Frozen & Chiller Room & 400 Sq.mtr  Rack System to store Food Products.
+Frozen room temperature range between -18°C to -24°C.
+Chiller room temperature range between 0°C to 12°C.
+        </p>
+        <button href="#" className='cursor-pointer' onClick={()=>setMoreDetails(false)} for="toggleContent1" class="read-more">
+          Show Less <span class="sr-only">about this is some title</span>
+        </button>
+      </div>
+        :   
+        <>
+        <figure>
+        {/* <img src="https://picsum.photos/id/1011/800/450" alt="" /> */}
+        <div class="flex flex-col items-center pb-10 imgdivcontent">
+        <img class="w-24 h-24 mb-3  shadow-lg" src={coldstorageicon} alt="Bonnie image"/>
+  
+        </div>
+      </figure>
+      <div class="article-body">
+      <h2>coldStorage</h2>
+        <p>
+        We Provide Specialized facilities to designed to preserve and store perishable items and temperature-sensitive goods at controlled low temperatures.
+        </p>
+        <button  onClick={()=>setMoreDetails(true)} for="toggleContent1" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          {/* <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg> */}
+        </button>
+      </div>
+      </>
+      }
+    
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+    {
+        moreDetailswateHouse ?
+        <div class="article-body">
+        <h2>Ware House</h2>
+        <p>
+        A dry warehouse is a storage facility designed for non-perishable goods that do not require temperature control or refrigeration. 
+They provide a secure and climate-controlled environment to protect products from environmental factors like moisture, dust, and temperature fluctuations.
+ ensuring the safe storage and efficient distribution of a wide range of dry goods.
+ We provide 6000 Nos of palletize System For Dry Warehouse & 2200 Sq.mtr Rack System for storage of agro, food, healthcare,pharmaceutical products & Fertilizers.
+        </p>
+        <button href="#" className='cursor-pointer' onClick={()=>setMoreDetailsWareHouse(false)} for="toggleContent1" class="read-more">
+          Show Less <span class="sr-only">about this is some title</span>
+        </button>
+      </div>
+        :   
+        <>
+        <figure>
+        {/* <img src="https://picsum.photos/id/1011/800/450" alt="" /> */}
+        <div class="flex flex-col items-center pb-10 imgdivcontent">
+        <img class="w-24 h-24 mb-3  shadow-lg" src={warehouseicon} alt="Bonnie image"/>
+  
+        </div>
+      </figure>
+      <div class="article-body">
+      <h2>Ware House</h2>
+
+        <p>
+        A dry warehouse is a storage facility designed for non-perishable goods that do not require temperature control or refrigeration. 
+
+        </p>
+        <button  onClick={()=>setMoreDetailsWareHouse(true)} for="toggleContent1" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+          {/* <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg> */}
+        </button>
+      </div>
+      </>
+      }
+   
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+    {
+        moreDetailsriping ?
+        <div class="article-body">
+        <h2>Riping Details</h2>
+        <p>
+        Our Fruits Ripping Chamber is a game-changer in the fruit industry. It precisely controls the ripening of fruits, enhancing flavor and texture, while extending shelf life. 
+Whether you're a grower,distributor, or importer our technology is your key to delivering the freshest, tastiest fruits to consumers worldwide.
+
+        </p>
+        <button href="#" className='cursor-pointer' onClick={()=>setMoreDetailsriping(false)} for="toggleContent1" class="read-more">
+          Show Less <span class="sr-only">about this is some title</span>
+        </button>
+      </div>
+        :   
+        <>
+        <figure>
+        {/* <img src="https://picsum.photos/id/1011/800/450" alt="" /> */}
+        <div class="flex flex-col items-center pb-10 imgdivcontent">
+        <img class="w-24 h-24 mb-3  shadow-lg" src={warehouseicon} alt="Bonnie image"/>
+  
+        </div>
+      </figure>
+      <div class="article-body">
+      <h2>Riping Details</h2>
+        <p>
+        Our Fruits Ripping Chamber is a game-changer in the fruit industry. It precisely controls the ripening of fruits, enhancing flavor and texture, while extending shelf life. 
+        </p>
+        <button  onClick={()=>setMoreDetailsriping(true)} for="toggleContent1" class="read-more">
+          Read more <span class="sr-only">about this is some title</span>
+       
+        </button>
+      </div>
+      </>
+      }
+   
+    </div>
+  </article>
+</section>
 </div>
+{/* <div className='absolute z-[999] xl:w-[100%] m-auto   flex justify-between xl:w-[10 0%] border border-[red] items-center h-[70vh]'>
+<div className='[w-100vw]'>
+<div class="w-full max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex justify-end px-4 pt-4">
+        <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
+            <span class="sr-only">Open dropdown</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
+                <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
+            </svg>
+        </button>
+        <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2" aria-labelledby="dropdownButton">
+            <li>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex flex-col items-center pb-10">
+        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image"/>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+        <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+        <div class="flex mt-4 space-x-3 md:mt-6">
+            <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View More</a>
+            <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700">Message</a>
+        </div>
+    </div>
+</div>
+</div>
+<div className='[w-100vw]'>
+<div class="w-full max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex justify-end px-4 pt-4">
+     
+    </div>
+    <div class="flex flex-col items-center pb-10 imgdivcontent">
+        <img class="w-24 h-24 mb-3  shadow-lg" src={coldstorageicon} alt="Bonnie image"/>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+        <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+        <div class="flex mt-4 space-x-3 md:mt-6">
+            <a href="#" class="inline-flex items-center px-4 py-2 decoration-none text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View More</a>
+           
+        </div>
+    </div>
+</div>
+</div>
+
+<div className='[w-100vw]'>
+<div class="w-full max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="flex justify-end px-4 pt-4">
+        <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
+            <span class="sr-only">Open dropdown</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
+                <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
+            </svg>
+        </button>
+      
+    </div>
+    <div class="flex flex-col items-center pb-10">
+        <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image"/>
+        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
+        <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
+        <div class="flex mt-4 space-x-3 md:mt-6">
+            <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View More</a>
+        </div>
+    </div>
+</div>
+</div>
+</div> */}
 
           {
             secondSliderData.map((elm)=>{
