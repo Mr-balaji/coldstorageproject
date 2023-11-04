@@ -315,138 +315,40 @@ farm and market to justify fair remunerative value of produced farm goods.&nbsp;
 </div>
 </div>
 </div> */}
-<div className='absolute z-[999] xl:w-[100%] m-auto   flex justify-between xl:w-[10 0%] border border-[red] items-center h-[70vh]'>
-<section class="articles">
-  <article>
-    <div class="article-wrapper">
-      {
-        moreDetails ?
-        <div class="article-body">
-        <h2>coldStorage</h2>
-        <p>
-        We Provide Specialized facilities to designed to preserve and store perishable items and temperature-sensitive goods at controlled low temperatures. 
-Cold Storage is Equipped with refrigeration systems to maintain a consistent cold environment, preventing spoilage, and extending the shelf life of products like fruits,
- vegetables, dairy, meat, and pharmaceuticals.
-  We provide 4000 Nos of palletize System for  Frozen & Chiller Room & 400 Sq.mtr  Rack System to store Food Products.
-Frozen room temperature range between -18°C to -24°C.
-Chiller room temperature range between 0°C to 12°C.
-        </p>
-        <button href="#" className='cursor-pointer' onClick={()=>setMoreDetails(false)} for="toggleContent1" class="read-more">
-          Show Less <span class="sr-only">about this is some title</span>
-        </button>
-      </div>
-        :   
-        <>
-        <figure>
-        {/* <img src="https://picsum.photos/id/1011/800/450" alt="" /> */}
-        <div class="flex flex-col items-center pb-10 imgdivcontent">
-        <img class="w-24 h-24 mb-3  shadow-lg" src={coldstorageicon} alt="Bonnie image"/>
-  
-        </div>
-      </figure>
-      <div class="article-body">
-      <h2>coldStorage</h2>
-        <p>
-        We Provide Specialized facilities to designed to preserve and store perishable items and temperature-sensitive goods at controlled low temperatures.
-        </p>
-        <button  onClick={()=>setMoreDetails(true)} for="toggleContent1" class="read-more">
-          Read more <span class="sr-only">about this is some title</span>
-          {/* <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg> */}
-        </button>
-      </div>
-      </>
-      }
-    
-    </div>
-  </article>
-  <article>
 
-    <div class="article-wrapper">
-    {
-        moreDetailswateHouse ?
-        <div class="article-body">
-        <h2>Ware House</h2>
-        <p>
-        A dry warehouse is a storage facility designed for non-perishable goods that do not require temperature control or refrigeration. 
-They provide a secure and climate-controlled environment to protect products from environmental factors like moisture, dust, and temperature fluctuations.
- ensuring the safe storage and efficient distribution of a wide range of dry goods.
- We provide 6000 Nos of palletize System For Dry Warehouse & 2200 Sq.mtr Rack System for storage of agro, food, healthcare,pharmaceutical products & Fertilizers.
-        </p>
-        <button href="#" className='cursor-pointer' onClick={()=>setMoreDetailsWareHouse(false)} for="toggleContent1" class="read-more">
-          Show Less <span class="sr-only">about this is some title</span>
-        </button>
-      </div>
-        :   
-        <>
-        <figure>
-        {/* <img src="https://picsum.photos/id/1011/800/450" alt="" /> */}
-        <div class="flex flex-col items-center pb-10 imgdivcontent">
-        <img class="w-24 h-24 mb-3  shadow-lg" src={warehouseicon} alt="Bonnie image"/>
-  
-        </div>
-      </figure>
-      <div class="article-body">
-      <h2>Ware House</h2>
-
-        <p>
-        A dry warehouse is a storage facility designed for non-perishable goods that do not require temperature control or refrigeration. 
-
-        </p>
-        <button  onClick={()=>setMoreDetailsWareHouse(true)} for="toggleContent1" class="read-more">
-          Read more <span class="sr-only">about this is some title</span>
-          {/* <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg> */}
-        </button>
-      </div>
-      </>
-      }
-   
-    </div>
-  </article>
-  <article>
-
-    <div class="article-wrapper">
-    {
-        moreDetailsriping ?
-        <div class="article-body">
-        <h2>Riping Details</h2>
-        <p>
-        Our Fruits Ripping Chamber is a game-changer in the fruit industry. It precisely controls the ripening of fruits, enhancing flavor and texture, while extending shelf life. 
-Whether you're a grower,distributor, or importer our technology is your key to delivering the freshest, tastiest fruits to consumers worldwide.
-
-        </p>
-        <button href="#" className='cursor-pointer' onClick={()=>setMoreDetailsriping(false)} for="toggleContent1" class="read-more">
-          Show Less <span class="sr-only">about this is some title</span>
-        </button>
-      </div>
-        :   
-        <>
-        <figure>
-        {/* <img src="https://picsum.photos/id/1011/800/450" alt="" /> */}
-        <div class="flex flex-col items-center pb-10 imgdivcontent">
-        <img class="w-24 h-24 mb-3  shadow-lg" src={warehouseicon} alt="Bonnie image"/>
-  
-        </div>
-      </figure>
-      <div class="article-body">
-      <h2>Riping Details</h2>
-        <p>
-        Our Fruits Ripping Chamber is a game-changer in the fruit industry. It precisely controls the ripening of fruits, enhancing flavor and texture, while extending shelf life. 
-        </p>
-        <button  onClick={()=>setMoreDetailsriping(true)} for="toggleContent1" class="read-more">
-          Read more <span class="sr-only">about this is some title</span>
-       
-        </button>
-      </div>
-      </>
-      }
-   
-    </div>
-  </article>
-</section>
+<div className='absolute maincard  z-[999] m-auto w-[1200px] left-[10%]  flex justify-center xl:w-[10 0% ] items-center h-[70vh]'>
+<div className='cards'>
+<div class="card cardsmain">
+  <div class="image"><img src={coldstorageicon}/></div>
+  <div class="card-info">
+    <span>Cold Storage</span>
+    <p>Support Specialist</p>
+  </div>
+  {/* <a href="#" class="button">Folow</a>
+   */}
+   <p className='moretext'>more text</p>
+</div>
+<div class="card cardsmain">
+  <div class="image"><img src={coldstorageicon}/></div>
+  <div class="card-info">
+    <span>Cold Storage</span>
+    <p>Support Specialist</p>
+  </div>
+  {/* <a href="#" class="button">Folow</a>
+   */}
+   <p className='moretext'>more text</p>
+</div>
+<div class="card cardsmain">
+  <div class="image"><img src={coldstorageicon}/></div>
+  <div class="card-info">
+    <span>Cold Storage</span>
+    <p>Support Specialist</p>
+  </div>
+  {/* <a href="#" class="button">Folow</a>
+   */}
+   <p className='moretext'>more text</p>
+</div>
+</div>
 </div>
 {/* <div className='absolute z-[999] xl:w-[100%] m-auto   flex justify-between xl:w-[10 0%] border border-[red] items-center h-[70vh]'>
 <div className='[w-100vw]'>
