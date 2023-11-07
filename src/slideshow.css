@@ -179,6 +179,104 @@
 }
 
 
+.thirdslide-div-with-background1 {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('./images/dairy\ Background.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; /* Adjust as needed */
+  width: 100%; /* Set the width of your div */
+  height: 100%; /* Set the height of your div */
+  animation: backgroundMove 60s infinite linear;
+  background-clip: content-box;
+  background-origin: content-box;
+}
+@keyframes backgroundMove {
+  0% {
+      background-position: center center;
+  }
+  25% {
+      background-position: center 2%;
+      /* transform: translateX(0); */
+  }
+  50% {
+      background-position: center center;
+      /* transform: translateX(-5%); */
+  }
+  75% {
+      background-position: center -2%;
+      /* transform: translateX(-5%); */
+  }
+  100% {
+      background-position: center center;
+      /* transform: translateX(0); */
+  }
+}
+
+
+.thirdslide-div-with-background2 {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('./images/extraction\ unit\ background.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; /* Adjust as needed */
+  width: 100%; /* Set the width of your div */
+  height: 100%; /* Set the height of your div */
+  animation: backgroundMove 60s infinite linear;
+  background-clip: content-box;
+  background-origin: content-box;
+}
+@keyframes backgroundMove {
+  0% {
+      background-position: center center;
+  }
+  25% {
+      background-position: center 2%;
+      /* transform: translateX(0); */
+  }
+  50% {
+      background-position: center center;
+      /* transform: translateX(-5%); */
+  }
+  75% {
+      background-position: center -2%;
+      /* transform: translateX(-5%); */
+  }
+  100% {
+      background-position: center center;
+      /* transform: translateX(0); */
+  }
+}
+
+.thirdslide-div-with-background3 {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url('./images/pulping\ background.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; /* Adjust as needed */
+  width: 100%; /* Set the width of your div */
+  height: 100%; /* Set the height of your div */
+  animation: backgroundMove 60s infinite linear;
+  background-clip: content-box;
+  background-origin: content-box;
+}
+@keyframes backgroundMove {
+  0% {
+      background-position: center center;
+  }
+  25% {
+      background-position: center 2%;
+      /* transform: translateX(0); */
+  }
+  50% {
+      background-position: center center;
+      /* transform: translateX(-5%); */
+  }
+  75% {
+      background-position: center -2%;
+      /* transform: translateX(-5%); */
+  }
+  100% {
+      background-position: center center;
+      /* transform: translateX(0); */
+  }
+}
+
+
 
   .swiper-button-next, .swiper-rtl .swiper-button-prev{
     padding: 29px;
@@ -946,7 +1044,9 @@ summary {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom: 3px solid #fefefe;
-  background: linear-gradient(40deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  /* background: linear-gradient(40deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+  background-color: skyblue;
+
   transition: all 0.5s ease;
 }
 
@@ -958,10 +1058,13 @@ summary {
   width: 90px;
   height: 90px;
   background-color: #fff;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   border: 4px solid #fefefe;
   margin-top: 30px;
   transition: all 0.5s ease;
+}
+.image img{
+  margin-top:-10%;
 }
 
 .card-info {
@@ -995,17 +1098,21 @@ summary {
 }
 .cards .card:hover{
   height: 100%;
-  background: linear-gradient(40deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  /* background: linear-gradient(40deg, rgb(185, 135, 218) 0%, rgb(226, 99, 99) 50%, rgba(252,176,69,1) 100%);
+   */
+   background-color: skyblue;
+  width: 40vw;
 
 }
 
 .card:hover::before {
-  width: 350px;
-  height: 300px;
+  /* width: 350px;
+  height: 300px; */
   border-bottom: none;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  /* border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; */
   transform: scale(0.95);
+  display: none;
 }
 
 .card:hover .card-info {
@@ -1013,7 +1120,7 @@ summary {
 }
 
 .card:hover .image {
-  transform: scale(2) translate(-8%,-40%);
+  transform: scale(2) translate(-8%,-20%);
 }
 
 .button:hover {
@@ -1023,10 +1130,13 @@ summary {
 
 .card .moretext{
   opacity: 0;
+  margin-top: 2%;
+  display: none;
 
 }
 .card:hover .moretext{
   opacity: 1;
+  display: block;
 }
 
 .cards {
