@@ -17,6 +17,13 @@ import wareHousebg from "../images/warehouse background.jpeg";
 import dairyicon from "../images/dairy unit icon.jpg";
 import extractionIcon from "../images/extraction icon.jpg";
 import pulpingicon from "../images/pulping icon.jpg";
+
+import multigrainicon from "../images/multi grain mill icon.jpg";
+import ricemillicon from "../images/rice mill icon.jpg";
+
+import cargoicon from "../images/cargo icon.jpg";
+import foodtestingicon from "../images/food testing lab icon.jpg";
+import superstocking from "../images/superstockist icon.jpg";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -494,8 +501,255 @@ const Slideshow = () => {
               </div>
             </>
           </SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
+          <SwiperSlide>
+          <>
+              <div>
+                <div className="flex justify-between  m-auto relative">
+                  <Swiper
+                    autoplay={{
+                      delay: 10000,
+                      disableOnInteraction: false,
+                    }}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination]}
+                    className="mainswipe"
+                    ref={swiperRef}
+                    slidesPerView={1}
+                  >
+                    <SwiperSlide>
+                      {/* <div className='div-with-background imgdiv'><img className='h-[100vh] imgdiv' src={coldstoragebg} /></div> */}
+                      <div className=" fourthlide-div-with-background1  h-[100%] ">
+                        <div className="xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   ">
+                          <div className="contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto"></div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className=" fourthlide-div-with-background2  h-[100%] ">
+                        <div className="xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   ">
+                          <div className="contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto"></div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      {" "}
+                      <div className=" fourthlide-div-with-background3  h-[100%] ">
+                        <div className="xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   ">
+                          <div className="contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto"></div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
+
+                  <div className="absolute maincard  z-[999] m-auto w-[1200px] left-[10%]  flex justify-center xl:w-[10 0% ] items-center h-[70vh]">
+                    <div className="cards">
+                      <div
+                        class="card cardsmain"
+                        onMouseEnter={() => handleHover(0)}
+                      >
+                        <div class="image">
+                          <img src={multigrainicon} />
+                        </div>
+                        <div class="card-info">
+                          <span> Dairy Unit</span>
+                          <p></p>
+                        </div>
+                        {/* <a href="#" class="button">Folow</a>
+                         */}
+                        <p className="moretext">
+                          {" "}
+                          A dairy unit is dedicated to the production and
+                          processing of dairy products like milk and its
+                          byproducts. The collected milk is processed,
+                          pasteurized, and transformed into various dairy
+                          products for consumption or distribution to consumers
+                          and businesses. we collect and process 2.5L liter milk
+                          per day straight from framers cowshed to our unit.
+                        </p>
+                      </div>
+                      <div
+                        class="card cardsmain"
+                        onMouseEnter={() => handleHover(1)}
+                      >
+                        <div class="image">
+                          <img src={ricemillicon} />
+                        </div>
+                        <div class="card-info">
+                          <span>Flavor & herbal Extract</span>
+                          <p></p>
+                        </div>
+                        {/* <a href="#" class="button">Folow</a>
+                         */}
+                        <p className="moretext">
+                          Flavor extracts are concentrated liquid forms of
+                          natural flavours used to enhance the taste of food and
+                          beverages. They capture the essence of various
+                          ingredients, such as fruits, spices, or herbs, in a
+                          convenient form. Herbal extracts, on the other hand,
+                          specifically focus on extracting the beneficial
+                          compounds from herbs, like medicinal or aromatic
+                          properties, often used for their therapeutic or
+                          flavor-enhancing qualities in various applications. We
+                          enchance supercritical CO2 Technology to produce
+                          oil,oleoresin in liquid & powder form with 10mtr
+                          capacity per month comes with standard Packaging.
+                        </p>
+                      </div>
+                      <div
+                        class="card cardsmain"
+                        onMouseEnter={() => handleHover(2)}
+                      >
+                        <div class="image">
+                          <img src={pulpingicon} />
+                        </div>
+                        <div class="card-info">
+                          <span>Pulping Unit Content</span>
+                          <p></p>
+                        </div>
+                        {/* <a href="#" class="button">Folow</a>
+                         */}
+                        <p className="moretext">
+                          Our Multi-Process Pulping Unit is a versatile
+                          powerhouse in fruit processing, capable of handling a
+                          wide range of fruits and delivering purees, juices,
+                          and concentrates with precision. It's the heart of our
+                          operation, ensuring the highest quality fruit products
+                          for various industries. It has ability to efficiently
+                          extract juices, pulp and purees of tomato, mango,
+                          guava, jamun in aseptic form.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          </SwiperSlide>
+          <SwiperSlide>
+          <>
+              <div>
+                <div className="flex justify-between  m-auto relative">
+                  <Swiper
+                    autoplay={{
+                      delay: 10000,
+                      disableOnInteraction: false,
+                    }}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination]}
+                    className="mainswipe"
+                    ref={swiperRef}
+                    slidesPerView={1}
+                  >
+                    <SwiperSlide>
+                      {/* <div className='div-with-background imgdiv'><img className='h-[100vh] imgdiv' src={coldstoragebg} /></div> */}
+                      <div className=" fifthslide-div-with-background1  h-[100%] ">
+                        <div className="xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   ">
+                          <div className="contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto"></div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className=" fifthslide-div-with-background2  h-[100%] ">
+                        <div className="xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   ">
+                          <div className="contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto"></div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      {" "}
+                      <div className=" fifthslide-div-with-background3  h-[100%] ">
+                        <div className="xl:w-[1300px] h-[100%]  xl:m-auto md:w-[1200px] flex justify-between   ">
+                          <div className="contentdiv text-[#fff] w-[50%] px-3 py-3 m-auto"></div>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
+
+                  <div className="absolute maincard  z-[999] m-auto w-[1200px] left-[10%]  flex justify-center xl:w-[10 0% ] items-center h-[70vh]">
+                    <div className="cards">
+                      <div
+                        class="card cardsmain"
+                        onMouseEnter={() => handleHover(0)}
+                      >
+                        <div class="image">
+                          <img src={cargoicon} />
+                        </div>
+                        <div class="card-info">
+                          <span> Cargo services</span>
+                          <p></p>
+                        </div>
+                        {/* <a href="#" class="button">Folow</a>
+                         */}
+                        <p className="moretext">
+                          {" "}
+                          ultra connect cargo services is  specialized in the transportation of goods and commodities from one location to another, 
+often across long distances all over pan india.
+ These services encompass of transportation including and may involve handling, storage, and documentation of cargo. 
+Cargo services are essential for  trade and logistics, facilitating the movement of products, raw materials, and supplies, 
+and contributing to the efficient functioning of supply chains for businesses and industries worldwide.
+we provide refer as well as dry Container to transport your goods throughout Pan india.                    Food testing lab is a specialized facility equipped to analyze and assess the safety, quality, and composition of food products.
+ our labs employ various scientific techniques to detect contaminants, pathogens, nutritional content, and authenticity in food samples. 
+Their findings help ensure that food products meet regulatory standards and are safe for consumption. 
+Food testing labs are essential for both food manufacturers and regulatory agencies in upholding food safety and quality standards in the food industry.
+We provide Micro as well as chemical division lab facility.
+                        </p>
+                      </div>
+                      <div
+                        class="card cardsmain"
+                        onMouseEnter={() => handleHover(1)}
+                      >
+                        <div class="image">
+                          <img src={foodtestingicon} />
+                        </div>
+                        <div class="card-info">
+                          <span>Food Testing Lab</span>
+                          <p></p>
+                        </div>
+                        {/* <a href="#" class="button">Folow</a>
+                         */}
+                        <p className="moretext">
+                        Food testing lab is a specialized facility equipped to analyze and assess the safety, quality, and composition of food products.
+ our labs employ various scientific techniques to detect contaminants, pathogens, nutritional content, and authenticity in food samples. 
+Their findings help ensure that food products meet regulatory standards and are safe for consumption. 
+Food testing labs are essential for both food manufacturers and regulatory agencies in upholding food safety and quality standards in the food industry.
+We provide Micro as well as chemical division lab facility.
+                        </p>
+                      </div>
+                      <div
+                        class="card cardsmain"
+                        onMouseEnter={() => handleHover(2)}
+                      >
+                        <div class="image">
+                          <img src={superstocking} />
+                        </div>
+                        <div class="card-info">
+                          <span>Super Stockists </span>
+                          <p></p>
+                        </div>
+                        {/* <a href="#" class="button">Folow</a>
+                         */}
+                        <p className="moretext">
+                        Super Stockists are the backbone of our distribution network, strategically positioned to efficiently manage and distribute 
+products to retailers, wholesalers and importer ensuring widespread availability.
+We play a vital role in warehousing, managing inventory, and delivering our products promptly to meet market demands.
+We are super-stockist of various FMCG products like Frozen products, Dairy products,and Ice-Cream  that specializes in distributing  products to a network of retailers and smaller distributors.
+ Our organization operate on a larger scale, serving as a vital link between the Dairy, Frozen products, ice cream manufacturer and the local retail market. 
+Our team ensure efficient distribution, inventory management, and timely deliveries, playing a crucial role in expanding the reach of your products and ensuring its availability to consumers across a specific region or area.
+We are super stockiest of Khushboo ice-cream of Maharashtra , karnataka, Goa states.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </>
+          </SwiperSlide>
           {/* <SwiperSlide>Slide 6</SwiperSlide>
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
