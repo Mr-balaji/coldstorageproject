@@ -554,20 +554,17 @@ const Slideshow = () => {
                           <img src={multigrainicon} />
                         </div>
                         <div class="card-info">
-                          <span> Dairy Unit</span>
+                          <span> Multi Grain</span>
                           <p></p>
                         </div>
                         {/* <a href="#" class="button">Folow</a>
                          */}
                         <p className="moretext">
                           {" "}
-                          A dairy unit is dedicated to the production and
-                          processing of dairy products like milk and its
-                          byproducts. The collected milk is processed,
-                          pasteurized, and transformed into various dairy
-                          products for consumption or distribution to consumers
-                          and businesses. we collect and process 2.5L liter milk
-                          per day straight from framers cowshed to our unit.
+                          Our Multi product Mill is a cutting-edge solution for processing a variety of grains,cereals and pulses.
+"Elevate your milling processing with our Multi-Product Mill. It's not just a mill; 
+it's a precision instrument for turning a range of grains cereals and pulses into premium-quality finished product.
+Our multi product mill as facility of sorting, grading, packing of Tur, Moong, Chana and Urade daal, Masoor, Bajra, Wheat with 5mt daily production capacity.
                         </p>
                       </div>
                       <div
@@ -578,24 +575,16 @@ const Slideshow = () => {
                           <img src={ricemillicon} />
                         </div>
                         <div class="card-info">
-                          <span>Flavor & herbal Extract</span>
+                          <span>Rice Mill</span>
                           <p></p>
                         </div>
                         {/* <a href="#" class="button">Folow</a>
                          */}
                         <p className="moretext">
-                          Flavor extracts are concentrated liquid forms of
-                          natural flavours used to enhance the taste of food and
-                          beverages. They capture the essence of various
-                          ingredients, such as fruits, spices, or herbs, in a
-                          convenient form. Herbal extracts, on the other hand,
-                          specifically focus on extracting the beneficial
-                          compounds from herbs, like medicinal or aromatic
-                          properties, often used for their therapeutic or
-                          flavor-enhancing qualities in various applications. We
-                          enchance supercritical CO2 Technology to produce
-                          oil,oleoresin in liquid & powder form with 10mtr
-                          capacity per month comes with standard Packaging.
+                        A rice mill is a facility or machine used for the processing of rice, one of the world's most important staple foods.
+ It removes the outer husk and other impurities from raw rice grains, yielding clean and edible rice. 
+Our rice mills is equipped with various stages of processing, including cleaning, husking, polishing, and sorting, to produce high-quality rice products. 
+we process 10mt daily non basmati rice like IR64, 1121,sona masoori and parboired rice.
                         </p>
                       </div>
                       <div
